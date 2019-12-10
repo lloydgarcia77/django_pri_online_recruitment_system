@@ -511,6 +511,7 @@ def pri_admin_client_delete_applicants(request, id, aid):
                 'user': user,
                 'profile': profile,
                 'client': client,
+                'hired_applicant': hired_applicant,
                 'applicants': applicants, 
             }
             data['table_records'] = render_to_string('pri_admin/tables/pri_admin_show_client_applicants_table.html', context)
@@ -522,6 +523,7 @@ def pri_admin_client_delete_applicants(request, id, aid):
                 'user': user,
                 'profile': profile,
                 'client': client,
+                'hired_applicant': hired_applicant,
                 'applicants': applicants, 
             }
             data['html_form'] = render_to_string(template_name, context, request)
